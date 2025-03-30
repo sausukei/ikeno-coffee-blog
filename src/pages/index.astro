@@ -1,10 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Header from '../components/header.astro';
+import About from './about.astro';
 ---
 
+
 <Layout>
-	
+  <div class="main">
+    <slot />
+  </div>
 </Layout>
+
+<style lang="scss">
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #D3D3D3;
+    margin: 0 2rem;
+  }
+  h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+</style>
