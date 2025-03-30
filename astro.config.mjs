@@ -6,7 +6,5 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
   integrations: [react()],
-  site: 'https://sausukei.github.io',
-  base: 'ikeno-coffee-blog',
 
 });
