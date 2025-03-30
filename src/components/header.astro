@@ -1,12 +1,11 @@
 ---
 import Logo from '../assets/ikeno-coffee.svg';
-import Image from 'astro/components/Image.astro';
 ---
 
 <header>
   <div class="top-row">
     <a href="/" class="logo">
-      <Image src={Logo} alt="Ikeno Coffee" height="32" />
+      <img src={Logo.src} height="32"  alt="">
     </a>
   </div>
   <div class="bottom-row">
@@ -29,7 +28,7 @@ import Image from 'astro/components/Image.astro';
     height: 12rem;
     display: flex;
     flex-direction: column;
-    // position: fixed;
+    position: fixed;
   }
   .top-row {
     display: flex;
